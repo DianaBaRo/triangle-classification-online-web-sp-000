@@ -9,13 +9,16 @@ class Triangle
   end
 
   def kind
-    if side1 != side2 && side2 != side3 && side1 != side3
-      :scalene
-    elsif side1 == side2 || side2 == side3 || side1 == side3
-      :isosceles
-    elsif (side1 == side2) && (side2 == side3)
-      :equilateral
-    elsif
+    else
+      if side1 != side2 && side2 != side3 && side1 != side3
+        :scalene
+      elsif side1 == side2 || side2 == side3 || side1 == side3
+        :isosceles
+      elsif (side1 == side2) && (side2 == side3)
+        :equilateral
+      end
+
+      elsif
       begin
         raise TriangleError
       rescue TriangleError => error
