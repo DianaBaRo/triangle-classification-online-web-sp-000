@@ -31,6 +31,7 @@ class Triangle
       end
     end
   end
+  
   class TriangleError < StandardError
     def message
       "you must give a valid triangle!"
