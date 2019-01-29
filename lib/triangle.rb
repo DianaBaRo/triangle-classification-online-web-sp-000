@@ -30,7 +30,7 @@ class Triangle
         :equilateral
       end
     end
-
+  end
   class TriangleError < StandardError
     def message
       "you must give a valid triangle!"
